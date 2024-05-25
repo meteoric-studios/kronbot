@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "header_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::header-link.header-link"
+    },
+    "contactDisplay": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "contactUrl": {
+      "type": "string"
+    },
+    "showContactIcon": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
