@@ -38,7 +38,7 @@ export default async function Header() {
     return (
         <>
             <ScrollHandler />
-            <Navbar className="navbar flex items-center justify-between w-full px-16 h-[10vh] sticky top-0 z-20">
+            <Navbar className="navbar flex items-center justify-between w-full responsive-px h-[10vh] sticky top-0 z-30">
                 <NavbarBrand>
                     <Image src={src} alt="Logo" width={40} height={40} />
                 </NavbarBrand>
