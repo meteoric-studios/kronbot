@@ -38,10 +38,10 @@ export function Sidebar({setSidebarOpen}: {
     }, [sidebar, setSidebarOpen]);
 
     return (
-        <div className="absolute top-0 left-0 w-screen h-screen bg-gray bg-opacity-40">
+        <div className="absolute top-0 left-0 w-screen h-screen bg-gray bg-opacity-40 sidebar-container">
             <aside
                 ref={sidebar}
-                className={"ms-auto bg-gray h-full max-w-fit z-10"}
+                className={"ms-auto bg-gray h-full max-w-fit z-10 sidebar"}
             >
                 <div className="p-8 border-b border-gray-300">
                     <Branding/>

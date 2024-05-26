@@ -1,0 +1,27 @@
+$duration: 0.25s;
+
+.sidebar {
+  animation: appear $duration ease-in-out;
+}
+
+.sidebar-container {
+  animation: fadein $duration ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

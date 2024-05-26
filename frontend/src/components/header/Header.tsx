@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import {Branding} from "@/components/header/Branding";
 import {Nav} from "@/components/header/Nav";
+import "./header.scss";
 
 export default function Header() {
     return (
