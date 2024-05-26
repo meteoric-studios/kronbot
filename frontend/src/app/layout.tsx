@@ -20,7 +20,7 @@ export default function RootLayout({ children, }: Readonly<{
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="min-h-screen">
+                <div className="min-h-screen flex flex-col">
                     <Header />
                     {children}
                 </div>
@@ -30,7 +30,7 @@ export default function RootLayout({ children, }: Readonly<{
                     src={"/background.png"} alt={"background"}
                     width={1440} height={1024}
                     className={clsx(
-                        "absolute top-0 left-0 w-screen h-screen -z-10",
+                        "fixed top-0 left-0 w-screen h-screen -z-10",
                         "object-cover",
                     )}
                 />

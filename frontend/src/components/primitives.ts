@@ -1,7 +1,8 @@
 import {tv} from "tailwind-variants";
+import clsx from "clsx";
 
 export const defaultPadding = tv({
-    base: "px-8 container mx-auto py-4",
+    base: "container mx-auto p-8",
     variants: {
         size: {
             sm: "px-8 container mx-auto py-4",
@@ -11,3 +12,10 @@ export const defaultPadding = tv({
         }
     }
 })
+
+export const button = tv({
+    base: clsx(
+        "bg-secondary-red px-4 py-2 rounded-md",
+        "hover:bg-primary-red transition-all"
+    )
+});
