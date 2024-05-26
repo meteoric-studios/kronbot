@@ -1,7 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import clsx from "clsx";
 import React, {useEffect, useRef} from "react";
-import {Branding} from "@/components/header/Branding";
+import {Branding} from "@/components/Branding";
 
 function SidebarLink({href, children}: {
     href: string;

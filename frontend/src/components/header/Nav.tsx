@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import clsx from "clsx";
 import React, {useEffect, useState} from "react";

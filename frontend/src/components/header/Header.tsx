@@ -1,16 +1,15 @@
-"use client";
-
 import clsx from "clsx";
-import {Branding} from "@/components/header/Branding";
+import {Branding} from "@/components/Branding";
 import {Nav} from "@/components/header/Nav";
 import "./header.scss";
+import {defaultPadding} from "@/components/primitives";
 
 export default function Header() {
     return (
         <header className={"w-full bg-gray bg-opacity-40 py-4"}>
             <div className={clsx(
                 "flex justify-between items-center",
-                "px-8 container mx-auto"
+                defaultPadding()
             )}>
                 <Branding />
                 <Nav />
