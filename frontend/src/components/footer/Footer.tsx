@@ -7,7 +7,7 @@ import {FooterLink, linkContainer} from "@/components/footer/FooterLink";
 
 export default function Footer() {
     return (
-        <footer className={"bg-gray"}>
+        <footer className={"bg-footer-red"}>
             <div className={clsx(
                 defaultPadding(),
                 "flex flex-col gap-8 items-center justify-center"

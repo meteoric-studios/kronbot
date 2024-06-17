@@ -6,7 +6,7 @@ import {defaultPadding} from "@/components/primitives";
 
 export default function Header() {
     return (
-        <header className={"w-full bg-gray bg-opacity-40 py-4"}>
+        <header className={"w-full bg-gray bg-opacity-60 py-4"}>
             <div className={clsx(
                 "flex justify-between items-center",
                 defaultPadding()

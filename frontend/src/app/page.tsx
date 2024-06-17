@@ -7,13 +7,18 @@ export default function Home() {
         <section
             className={clsx(
                 defaultPadding(),
-                "grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8",
+                "grid grid-cols-1 md:grid-cols-2 items-center justify-center px-8 gap-20",
                 "flex-grow"
             )}
         >
-            <div>
-                <h1 className={"text-4xl mb-4"}>KronBET</h1>
-                <p className={"text-2xl mb-8"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, est,
+            <div className="flex flex-col items-center md:items-start">
+                <Image src={"/logo-name.svg"}
+                       alt={"logo name"}
+                       width={600}
+                       height={100}
+                />
+
+                <p className={"text-2xl my-8"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, est,
                     voluptatum. Aliquam architecto assumenda at dolores fugit, illo tempore tenetur. Ducimus eaque fugit
                     illo illum laborum nobis placeat provident veniam.</p>
 
@@ -24,14 +29,16 @@ export default function Home() {
                     Meet the team
                 </button>
             </div>
-
-            <Image
-                src={"/logo-lg.png"} alt={"logo"}
-                width={500} height={500}
-                className={clsx(
-                    "object-contain md:max-w-[300px] mx-auto md:mx-0 md:justify-self-end"
-                )}
-            />
+            <div>
+                <Image
+                    src={"/logo nou.svg"} alt={"logo"}
+                    width={350} height={350}
+                    className={ clsx(
+                        "object-contain max-w-[350px] mr-0 ml-auto"
+                    )}
+                />
+            </div>
         </section>
+
     );
 }
